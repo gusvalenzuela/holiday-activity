@@ -1,0 +1,30 @@
+body {
+    background: url(../images/white_carbonfiber_@2X.png);
+}
+
+.car-text {
+    z-index: 9;
+    position: absolute;
+    bottom: 1.5em;
+    right: 0;
+    left: 0;
+}
+
+.name-decor {
+    color: white;
+    font-weight: 400;
+    text-shadow: 3px 3px black;
+}
+
+/* .name-decor:hover {
+    color: black;
+    text-shadow: 3px 3px whitesmoke;
+} */
+
+.slide-height-1 {
+    max-height: 340px;
+}
+.slide-height-2 {
+    max-height: 210px;
+}
+
