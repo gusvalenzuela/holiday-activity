@@ -12,14 +12,14 @@ body {
 
 .name-decor {
     color: white;
-    font-weight: 400;
+    font-weight: 600;
     text-shadow: 3px 3px black;
 }
 
-/* .name-decor:hover {
-    color: black;
-    text-shadow: 3px 3px whitesmoke;
-} */
+.home-tagline {
+    text-transform: uppercase;
+}
+
 
 .slide-height-1 {
     max-height: 340px;
@@ -28,3 +28,38 @@ body {
     max-height: 210px;
 }
 
+
+@media only screen and (max-width: 768px) {
+
+    .name-decor {
+        font-size: 42px;
+    }
+
+    .home-tagline {
+        font-size: 16px;
+    }
+
+    .car-text {
+        bottom: .5em;
+    }
+} 
+
+@media only screen and (max-width: 576px) {
+
+    .name-decor {
+        font-size: 24px;
+    }
+
+    .home-tagline {
+        font-size: 10px;
+    }
+
+    .car-text {
+        bottom: .25em;
+    }
+
+    .feat-film {
+        padding-top: .5em;
+        padding-left: 0;
+    }
+} 
