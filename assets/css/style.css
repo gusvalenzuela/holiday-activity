@@ -28,6 +28,16 @@ body {
     max-height: 210px;
 }
 
+#thirtynine-steps-card {
+    background: url(../images/39-steps-card-bg.jpg) center center;
+}
+#secret-agent-card {
+    background: url(../images/secret-agent-card-bg.jpg) center center;
+}
+#sabotage-card {
+    background: url(../images/sabotage-card-bg.jpg) center center;
+}
+
 
 @media only screen and (max-width: 768px) {
 
