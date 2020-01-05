@@ -8,17 +8,62 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>News Feed</title>
+    <title>Contact</title>
 </head>
+
 <body>
-    <div class="container">
+    <div class="container-md mb-4">
         <div class="row">
-            <div class="jumbotron align-self-center">
-                <h1 class="display-2">NEWS</h1>
-                <h2 class="lead">PAGE UNDER CONSTRUCTION</h2>
+            <nav class="navbar navbar-expand-sm bg-dark navbar-dark col">
+                <span class="text-white">[.hitchcockFanSite]</span>
+                <button class="navbar-toggler border-none" type="button" data-toggle="collapse" data-target="#ah-Navbar">
+                    <span class="material-icons" style="font-size:30px;">more_vert</span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="ah-Navbar">
+                    <ul class="navbar-nav text-right">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="featured-vertigo.html">Masterpieces</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="films-pg-1.html">Films</a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link text-warning disabled" href="#">News<span class="sr-only">(current)</span></a>
+                        </li>    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>    
+                    </ul>
+                </div>  
+            </nav>
+        </div>
+        
+        <!-- jumbotron row -->
+        <div class="row">
+            <div id="jumbo-slides" class="carousel slide col-12 px-0" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./assets/images/vertigo-stairs-header.jpg" class="d-block w-100" data-interval="1000" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/norman-bates-header.png" class="d-block w-100" data-interval="1000" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/birds-cameo-header.jpg" class="d-block w-100" data-interval="1000" alt="...">
+                    </div>
+                    <div class="car-text">
+                        <h1 class="display-2 text-white text-center name-decor">NEWS</h1>
+                        <h2 class="lead text-white text-center">PAGE UNDER CONSTRUCTION</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 </body>
 </html>

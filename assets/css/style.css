@@ -4,7 +4,7 @@ body {
 }
 
 .nice-bottom-border {
-    border-bottom: 8px goldenrod solid;
+    border-bottom: 3px rgb(255, 255, 82);
 }
 
 .car-text {
@@ -33,10 +33,10 @@ body {
     font-size: 14px;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 
     .name-decor {
-        font-size: 42px;
+        font-size: 44px;
     }
 
     .home-tagline {
@@ -51,7 +51,7 @@ body {
 @media only screen and (max-width: 576px) {
 
     .name-decor {
-        font-size: 24px;
+        font-size: 28px;
     }
 
     .home-tagline {
@@ -59,7 +59,7 @@ body {
     }
 
     .car-text {
-        bottom: .25em;
+        bottom: .1em;
     }
 
     .feat-film {

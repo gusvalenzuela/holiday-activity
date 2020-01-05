@@ -8,6 +8,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Home</title>
 </head>
@@ -17,10 +18,10 @@
         <div class="row">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark col">
                 <span class="text-white">[.hitchcockFanSite]</span>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ah-Navbar">
-                <span class="navbar-toggler-icon"></span>
+                <button class="navbar-toggler border-none" type="button" data-toggle="collapse" data-target="#ah-Navbar">
+                    <span class="material-icons" style="font-size:30px;">more_vert</span>
                 </button>
-                <div class="collapse navbar-collapse d-flex justify-content-end" id="ah-Navbar">
+                <div class="collapse navbar-collapse justify-content-end" id="ah-Navbar">
                     <ul class="navbar-nav text-right">
                         <li class="nav-item">
                             <a class="nav-link disabled text-warning" href="#">Home<span class="sr-only">(current)</span></a>
@@ -35,7 +36,7 @@
                             <a class="nav-link" href="news.html">News</a>
                         </li>    
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Me</a>
+                            <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>    
                     </ul>
                 </div>  
@@ -47,6 +48,9 @@
             <div id="jumbo-slides" class="carousel slide col-12 px-0" data-ride="carousel">
                 <div class="carousel-inner slide-height-1">
                     <div class="carousel-item">
+
+                        <!-- add on-hover message re:image slide paused while mouse over image  -->
+                        
                         <img src="./assets/images/nxnw-bg-slide-300.png" class="d-block w-100" data-interval="1000" alt="...">
                     </div>
                     <div class="carousel-item">
@@ -57,7 +61,7 @@
                     </div>
                     <div class="car-text">
                       <h1 class="display-4 pl-4 name-decor text-uppercase">Alfred Hitchcock</h1>
-                      <p class="lead pl-4 text-white font-italic text-uppercase">Master of Suspense and the MacGuffin</p>
+                      <p class="lead pl-4 text-white font-italic text-uppercase home-tagline">Master of Suspense and the MacGuffin</p>
                     </div>
                 </div>
             </div>
