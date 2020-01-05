@@ -13,28 +13,29 @@
 </head>
 
 <body>    
-    <div class="container mb-4">
+    <div class="container-md mb-4">
         <div class="row">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark col">
-                <button class="navbar-toggler w-100" type="button" data-toggle="collapse" data-target="#ah-Navbar">
+                <span class="text-white">[.hitchcockFanSite]</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ah-Navbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="ah-Navbar">
-                    <ul class="navbar-nav text-center">
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="ah-Navbar">
+                    <ul class="navbar-nav text-right">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-warning" href="featured-vertigo.html">Masterpieces<span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="featured-vertigo.html">Masterpieces</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="films-pg-1.html">Films</a>
+                            <a class="nav-link text-warning disabled" href="#">Films<span class="sr-only">(current)</span></a>
                         </li>    
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="news.html">News</a>
                         </li>    
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
+                            <a class="nav-link" href="contact.html">Contact Me</a>
                         </li>    
                     </ul>
                 </div>  
@@ -46,13 +47,13 @@
             <div id="jumbo-slides" class="carousel slide col-12 px-0" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img src="./assets/images/vertigo-stairs-header.jpg" class="d-block w-100" data-interval="2000" alt="...">
+                        <img src="./assets/images/vertigo-stairs-header.jpg" class="d-block w-100" data-interval="1000" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/norman-bates-header.png" class="d-block w-100" data-interval="2000" alt="...">
+                        <img src="./assets/images/norman-bates-header.png" class="d-block w-100" data-interval="1000" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/birds-cameo-header.jpg" class="d-block w-100" data-interval="3000" alt="...">
+                        <img src="./assets/images/birds-cameo-header.jpg" class="d-block w-100" data-interval="1000" alt="...">
                     </div>
                     <div class="car-text">
                       <h1 class="pl-4 name-decor">FILMOGRAPHY</h1> 
@@ -62,90 +63,334 @@
         </div>
     </div>
 
-    <div class="container bg-light" id="content-top">
+    <div class="container-md bg-light mb-4" id="content-top">
         
         <!-- content rows -->
-        <div class="row p-3">            
-            <div class="col">
-                <div class="card" id="thirtynine-steps-card">
-                    <h5 class="card-header">Featured</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="row p-4">
+            <div class="col-sm-12 col-md-8 px-0">
+                <ul class="list-unstyled pr-4">                
+                    <!-- film 1 - the man who knew too much -->
+                    <li class="media py-3">
+                        <img src="./assets/images/filmography/TMWKTM-64x96.jpg" class="mr-3 align-self-center" alt="Man Who Knew Too Much (1934) movie poster">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">The Man Who Knew Too Much <span class="font-weight-light">(1934)</span> </h5>
+                            A man and his wife receive a clue to an imminent assassination attempt, only to learn that their daughter has been kidnapped to keep them quiet.
+                            <br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link p-0" data-toggle="modal" data-target="#Modal-1">
+                                More Info
+                            </button>
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="label">Other Info:</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <strong>Writers:</strong> Charles Bennett, D.B. Wyndham-Lewis<br>
+                                        <strong>Stars:</strong> Leslie Banks, Edna Best, Peter Lorre<br>
+                                        <strong>Runtime:</strong> 75 min<br>
+                                        <strong>Aspect Ratio:</strong> 1.37:1<br>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card" id="secret-agent-card">
-                    <h5 class="card-header">Featured</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </li>
+                    <!-- film 2 -  -->
+                    <li class="media py-3">
+                        <img src="./assets/images/filmography/39-Steps-1935-64x96.jpg" class="mr-3 align-self-center" alt="39 Steps (1935) movie poster">
+                        <div class="media-body">
+                        <h5 class="mt-0 mb-1">The 39 Steps <span class="font-weight-light">(1935)</span></h5>
+                        A man in London tries to help a counter-espionage Agent. But when the Agent is killed, and the man stands accused, he must go on the run to save himself and stop a spy ring which is trying to steal top secret information.
+                        <br>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-link p-0" data-toggle="modal" data-target="#Modal-2">
+                            More Info
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="Modal-2" tabindex="-1" role="dialog" aria-labelledby="label" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="label">Other Info:</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <strong>Writers:</strong> John Buchan (adapted from the novel by), Charles Bennett (adaptation)<br>
+                                    <strong>Stars:</strong> Robert Donat, Madeleine Carroll, Lucie Mannheim<br>
+                                    <strong>Runtime:</strong> 86 min<br>
+                                    <strong>Aspect Ratio:</strong> 1.37:1<br>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
                     </div>
+                    </li>
+                    <!-- film 3 -  -->
+                    <li class="media py-3">
+                        <img src="./assets/images/filmography/sabotage-64x96.jpg" class="mr-3 align-self-center" alt="Sabotage movie poster">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Sabotage <span class="font-weight-light">(1936)</span></h5>
+                            A Scotland Yard undercover detective is on the trail of a saboteur who is part of a plot to set off a bomb in London. But when the detective's cover is blown, the plot begins to unravel. (<i>US title: The Woman Alone</i>) 
+                            <br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link p-0" data-toggle="modal" data-target="#Modal-1">
+                                More Info
+                            </button>
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="label">Other Info:</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <strong>Writers:</strong> John Buchan (adapted from the novel by), Charles Bennett (adaptation)<br>
+                                        <strong>Stars:</strong> Robert Donat, Madeleine Carroll, Lucie Mannheim<br>
+                                        <strong>Runtime:</strong> 86 min<br>
+                                        <strong>Aspect Ratio:</strong> 1.37:1<br>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- film 4 -  -->
+                    <li class="media py-3">
+                        <img src="./assets/images/filmography/secret-agent-64x96.jpg" class="mr-3 align-self-center" alt="Secret Agent movie poster">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Secret Agent <span class="font-weight-light">(1936)</span></h5>
+                            After three British Agents are assigned to assassinate a mysterious German spy during World War I, two of them become ambivalent when their duty to the mission conflicts with their consciences.
+                            <br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link p-0" data-toggle="modal" data-target="#Modal-1">
+                                More Info
+                            </button>
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="label">Other Info:</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <strong>Writers:</strong> John Buchan (adapted from the novel by), Charles Bennett (adaptation)<br>
+                                        <strong>Stars:</strong> Robert Donat, Madeleine Carroll, Lucie Mannheim<br>
+                                        <strong>Runtime:</strong> 86 min<br>
+                                        <strong>Aspect Ratio:</strong> 1.37:1<br>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- film 5 -  -->
+                    <li class="media py-3">
+                        <img src="./assets/images/filmography/young-innocent-64x96.jpg" class="mr-3 align-self-center" alt="Young and Innocent movie poster">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Young and Innocent <span class="font-weight-light">(1937)</span></h5>
+                            A man on the run from a murder charge enlists a beautiful stranger who must put herself at risk for his cause. (<i>US title: The Girl Was Young</i>)
+                            <br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link p-0" data-toggle="modal" data-target="#Modal-1">
+                                More Info
+                            </button>
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="label">Other Info:</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <strong>Writers:</strong> John Buchan (adapted from the novel by), Charles Bennett (adaptation)<br>
+                                        <strong>Stars:</strong> Robert Donat, Madeleine Carroll, Lucie Mannheim<br>
+                                        <strong>Runtime:</strong> 86 min<br>
+                                        <strong>Aspect Ratio:</strong> 1.37:1<br>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- film 6 -  -->
+                    <li class="media py-3">
+                        <img src="./assets/images/filmography/lady-vanishes-dvd-cover-64x96.jpg" class="mr-3 align-self-center" alt="...">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">The Lady Vanishes <span class="font-weight-light">(1938)</span></h5>
+                            While travelling in continental Europe, a rich young playgirl realizes that an elderly lady seems to have disappeared from the train.
+                            <br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link p-0" data-toggle="modal" data-target="#Modal-1">
+                                More Info
+                            </button>
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="Modal-1" tabindex="-1" role="dialog" aria-labelledby="label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="label">Other Info:</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <strong>Writers:</strong> John Buchan (adapted from the novel by), Charles Bennett (adaptation)<br>
+                                        <strong>Stars:</strong> Robert Donat, Madeleine Carroll, Lucie Mannheim<br>
+                                        <strong>Runtime:</strong> 86 min<br>
+                                        <strong>Aspect Ratio:</strong> 1.37:1<br>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- film 7 -  -->
+                    <li class="media py-3">
+                        <img src="./assets/images/filmography/jamaica-inn-poster-64x96.jpg" class="mr-3 align-self-center" alt="...">
+                        <div class="media-body">
+                        <h5 class="mt-0 mb-1">Jamaica Inn <span class="font-weight-light">(1939)</span></h5>
+                        In Cornwall, 1819, a young woman discovers she's living near a gang of criminals who arrange shipwrecks for profit.
+                        <br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link p-0" data-toggle="modal" data-target="#Modal-7">
+                                More Info
+                            </button>
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="Modal-7" tabindex="-1" role="dialog" aria-labelledby="Modal-7label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="label">Additional Information:</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <strong>Writers:</strong> Sidney Gilliat (screen play), Joan Harrison (screen play)<br>
+                                        <strong>Stars:</strong> Maureen O'Hara, Robert Newton, Charles Laughton<br>
+                                        <strong>Runtime:</strong> 108 min | 90 min (Ontario)<br>
+                                        <strong>Aspect Ratio:</strong> 1.37:1<br>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- film 8 - Rebecca -->
+                    <li class="media py-3">
+                        <img src="./assets/images/filmography/rebecca-criterion-64x96.jpg" class="mr-3 align-self-center" alt="Rebecca Criterion DVD cover">
+                        <div class="media-body">
+                            <h5 class="mt-0 mb-1">Rebecca <span class="font-weight-light">(1940)</span></h5>
+                            A self-conscious woman juggles adjusting to her new role as an aristocrat's wife and avoiding being intimidated by his first wife's spectral presence.
+                            <br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-link p-0" data-toggle="modal" data-target="#Modal-8">
+                                More Info
+                            </button>
+                        
+                            <!-- Modal -->
+                            <div class="modal fade" id="Modal-8" tabindex="-1" role="dialog" aria-labelledby="Modal-8label" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="label">Additional Information:</h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <strong>Writers:</strong> Daphne Du Maurier (celebrated novel), Robert E. Sherwood (screen play)<br>
+                                        <strong>Stars:</strong> Laurence Olivier, Joan Fontaine, George Sanders<br>
+                                        <strong>Runtime:</strong> 130 min<br>
+                                        <strong>Aspect Ratio:</strong> 1.37:1<br>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- film 9 -  -->
+                    <li class="media py-3">
+                        <img src="..." class="mr-3 align-self-center" alt="...">
+                        <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </li>
+                    <!-- film 10 -  -->
+                    <li class="media py-3">
+                        <img src="..." class="mr-3 align-self-center" alt="...">
+                        <div class="media-body">
+                        <h5 class="mt-0 mb-1">List-based media object</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                        </div>
+                    </li>
+                </ul>
+            </div>     
+            
+            <!-- featured film column on right  -->
+            <div class="col align-items-center p-0 align-self-center">
+                <div class="card-header text-center text-white bg-dark">
+                    <h4 class="m-0">Featured Film:</h4>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card" id="sabotage-card">
-                    <h5 class="card-header">Featured</h5>
+                <div class="card">
+                    <img src="./assets/images/filmography/rebecca-poster-sidebar.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      <h5 class="card-title">Plot Summary</h5>
+                      <p class="card-text">A shy lady's companion, staying in Monte Carlo with her stuffy employer, meets the wealthy Maxim de Winter. She and Max fall in love, marry and return to Manderley, his large country estate in Cornwall. Max is still troubled by the death of his first wife, Rebecca, in a boating accident the year before. The second Mrs. de Winter clashes with the housekeeper, Mrs. Danvers, and discovers that Rebecca still has a strange hold on everyone at Manderley.<i>—Col Needham (col@imdb.com)</i></p>
                     </div>
-                </div>
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><strong>Writers:</strong> Ethel Lina White (based upon the story by: "The Wheel Spins"), Sidney Gilliat (screen play)</li>
+                      <li class="list-group-item"><strong>Stars:</strong> Margaret Lockwood, Michael Redgrave, Paul Lukas</li>
+                      <li class="list-group-item"><strong>Runtime:</strong> 96 min.</li>
+                    </ul>
+                    <div class="card-body text-center">
+                      <a href="https://www.youtube.com/watch?v=YihbNGUNQmU" class="card-link" target="_blank">Trailer (YouTube)</a>
+                      <a href="https://www.imdb.com/title/tt0030341/" class="card-link" target="_blank">IMDB</a>
+                      <a href="https://en.wikipedia.org/wiki/The_Lady_Vanishes" class="card-link" target="_blank">Wikipedia</a>
+                    </div>
+                  </div>
             </div>
         </div>
 
+
+        <!-- pagination div  -->
         <div class="row p-3">            
-            <div class="col-4">
-                <div class="card" id="thirtynine-steps-card">
-                    <h5 class="card-header">Featured</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" id="secret-agent-card">
-                    <h5 class="card-header">Featured</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-4">
-                <div class="card" id="sabotage-card">
-                    <h5 class="card-header">Featured</h5>
-                    <div class="card-body">
-                        <h5 class="card-title">Special title treatment</h5>
-                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- modal with YouTube link -->
-        <!-- <div class="row"></div> -->
-
-        <!-- controls row wrap  -->
-        <div class="row bg-light justify-content-between">
             
         </div>
-
-        <div class="row bg-dark py-2">
-            <footer class="text-center mx-auto">
-                <span class="text-muted">Copyright 2019</span> 
+    </div>
+    
+    <div class="container-md">
+        <div class="row bg-dark py-2 mb-0">
+            <footer class="text-center mx-auto col">
+                <span class="text-muted footer">&copy; Copyright 2019-2020 | Github: <a href="https://github.com/gusvalenzuela/holiday-activity" target="_blank" class="text-decoration-none">@gusvalenzuela</a></span>
             </footer>
         </div>
-
     </div>
-
 </body>
 </html>

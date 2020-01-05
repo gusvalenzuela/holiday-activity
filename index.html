@@ -9,20 +9,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Home Page</title>
+    <title>Home</title>
 </head>
 
 <body>    
-    <div class="container mb-4">
+    <div class="container-md mb-4">
         <div class="row">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark col">
-                <button class="navbar-toggler w-100" type="button" data-toggle="collapse" data-target="#ah-Navbar">
+                <span class="text-white">[.hitchcockFanSite]</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ah-Navbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="ah-Navbar">
-                    <ul class="navbar-nav text-center">
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="ah-Navbar">
+                    <ul class="navbar-nav text-right">
                         <li class="nav-item">
-                            <a class="nav-link active text-warning" href="index.html">Home<span class="sr-only">(current)</span></a>
+                            <a class="nav-link disabled text-warning" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link " href="featured-vertigo.html">Masterpieces</a>
@@ -31,10 +32,10 @@
                             <a class="nav-link" href="films-pg-1.html">Films</a>
                         </li>    
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="news.html">News</a>
                         </li>    
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
+                            <a class="nav-link" href="contact.html">Contact Me</a>
                         </li>    
                     </ul>
                 </div>  
@@ -46,60 +47,197 @@
             <div id="jumbo-slides" class="carousel slide col-12 px-0" data-ride="carousel">
                 <div class="carousel-inner slide-height-1">
                     <div class="carousel-item">
-                        <img src="./assets/images/nxnw-bg-slide-300.png" class="d-block w-100" data-interval="1500" alt="...">
+                        <img src="./assets/images/nxnw-bg-slide-300.png" class="d-block w-100" data-interval="1000" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="./assets/images/birds-bg-slide-300.jpg" class="d-block w-100" data-interval="1500" alt="...">
+                        <img src="./assets/images/birds-bg-slide-300.jpg" class="d-block w-100" data-interval="1000" alt="...">
                     </div>
                     <div class="carousel-item active">
-                        <img src="./assets/images/Rear-Window-bg-slide-300.jpg" class="d-block w-100" data-interval="1500" alt="...">
+                        <img src="./assets/images/Rear-Window-bg-slide-300.jpg" class="d-block w-100" data-interval="1000" alt="...">
                     </div>
                     <div class="car-text">
-                      <h1 class="display-4 pl-4 name-decor  text-uppercase">Alfred Hitchcock</h1>
-                      <p class="lead pl-4 text-white font-italic text-uppercase home-tagline" >Master of both Suspense and MacGuffin</p>
+                      <h1 class="display-4 pl-4 name-decor text-uppercase">Alfred Hitchcock</h1>
+                      <p class="lead pl-4 text-white font-italic text-uppercase">Master of Suspense and the MacGuffin</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
+    <div class="container-md mb-4">
         <!-- biography row -->
         <div class="row bg-light p-4">
             <h3>About</h3>
+            <hr>
             <p>Sir Alfred Hitchcock, was an English-born American motion-picture director whose suspenseful films and television programs won immense popularity and critical acclaim over a long and tremendously productive career. His films are marked by a macabre sense of humour and a somewhat bleak view of the human condition.</p>
             <p>Hitchcock has been called by some the greatest of all directors, the most adroit, and the most admired, and the case has been made that he was all of these. His many classics are widely acknowledged — including <i>The 39 Steps</i>, <i>The Lady Vanishes</i>, <i>Rebecca</i>, <i>Shadow of a Doubt</i>, <i>Notorious</i>, <i>Strangers on a Train</i>, <i>Rear Window</i>, <i>Vertigo</i>, <i>North by Northwest</i>, <i>Psycho</i>, and <i>The Birds</i> — and in these films Hitchcock’s genius as both filmmaker and storyteller is abundantly evident.</p>
-            <a href="#" class="btn btn-secondary" role="button">Learn More</a>
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-warning text-dark rounded-0" data-toggle="modal" data-target="#aboutModal">
+                Learn More
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="aboutModalTitle">About: <i>taken from Biography.com</i></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    </div>
+                    <div class="modal-body">
+                        Filmmaker Alfred Hitchcock was nicknamed the "Master of Suspense" for employing a kind of psychological suspense in his films, producing a distinct viewer experience.
+                        <br>
+                        <br><strong>Who Was Alfred Hitchcock?</strong>
+                        <br>Famous director and filmmaker Alfred Hitchcock worked for a short time in engineering before entering the film industry in 1920. He left for Hollywood in 1939, where his first American film, Rebecca, won the Academy Award for Best Picture. Hitchcock created more than 50 films, including the classics Rear Window, The 39 Steps and Psycho. Nicknamed the "Master of Suspense," Hitchcock received the AFI's Life Achievement Award in 1979. He died in 1980.
+                        <br>
+                        <br><strong>Early Life</strong>
+                        <br>Alfred Joseph Hitchcock was born in London, England, on August 13, 1899, and was raised by strict, Catholic parents. He described his childhood as lonely and sheltered, partly due to his obesity. He once said that he was sent by his father to the local police station with a note asking the officer to lock him away for 10 minutes as punishment for behaving badly. He also remarked that his mother would force him to stand at the foot of her bed for several hours as punishment (a scene alluded to in his film Psycho). This idea of being harshly treated or wrongfully accused would later be reflected in Hitchcock's films.
+                        <br>
+                        <br><strong>Master of Suspense</strong>
+                        <br>Hitchcock attended the Jesuit school St. Ignatius College before going on to attend the University of London, taking art courses. He eventually obtained a job as a draftsman and advertising designer for the cable company Henley's. It was while working at Henley's that he began to write, submitting short articles for the in-house publication. From his very first piece, he employed themes of false accusations, conflicted emotions and twist endings with impressive skill. In 1920, Hitchcock entered the film industry with a full-time position at the Famous Players-Lasky Company designing title cards for silent films. Within a few years, he was working as an assistant director.
+                        <br>
+                        In 1925, Hitchcock directed his first film and began making the "thrillers" for which he became known the world over. His 1929 film Blackmail is said to be the first British "talkie." In the 1930s, he directed such classic suspense films as The Man Who Knew Too Much (1934) and The 39 Steps (1935).
+                        <br>
+                        <br><strong>Movies: 'Rebecca,' 'Psycho' and 'The Birds' </strong>
+                        <br>In 1939, Hitchcock left England for Hollywood. The first film he made in the United States, Rebecca (1940), won an Academy Award for best picture. Some of his most famous films include Psycho (1960), The Birds (1963) and Marnie (1964). His works became renowned for their depictions of violence, although many of his plots merely function as decoys meant to serve as a tool for understanding complex psychological characters. His cameo appearances in his own films, as well as his interviews, film trailers and the television program Alfred Hitchcock Presents (1955-1965), made him a cultural icon.
+                        <br>
+                        <br><strong>Death and Legacy</strong>
+                        <br>Hitchcock directed more than 50 feature films in a career spanning six decades. He received the American Film Institute's Life Achievement Award in 1979. One year later, on April 29, 1980, Hitchcock died peacefully in his sleep in Bel Air, California. He was survived by his lifetime partner, assistant director and closest collaborator, Alma Reville, also known as "Lady Hitchcock," who died in 1982.
+                    </div>
+                    <div class="modal-footer">
+                    <a href="https://www.biography.com/filmmaker/alfred-hitchcock" target="_blank" class="btn btn-warning" role="button">More @ biography.com</a>
+                    </div>
+                </div>
+                </div>
+            </div>
         </div>
 
         <!-- featured content row -->
         <div class="row bg-light p-4 justify-content-between">
+            
             <!-- featured character -->
-            <div class="col pl-0">
+            <div class="col-12 col-md-6 p-1">
                 <h3>T.R. Devlin</h3>
                 <img src="./assets/images/devlin-150x150.jpg" class="float-left mr-3" alt="Devlin, lead male character in 'Notorious,' as played by Cary Grant">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aspernatur assumenda rem qui aut soluta quasi deserunt! Reprehenderit aut, rerum culpa iusto cum exercitationem quae possimus nihil. Laudantium, accusantium dolorum.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aspernatur assumenda rem qui aut soluta quasi deserunt! Reprehenderit aut, rerum culpa iusto cum exercitationem quae possimus nihil. Laudantium, accusantium dolorum.</p>
-                <a href="#" class="btn btn-secondary" role="button">Learn More</a>
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning text-dark rounded-0" data-toggle="modal" data-target="#aboutModal">
+                    Learn More
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="aboutModalTitle">About: T.R. Devlin</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+
+                            <div class="modal-body">
+                                Filmmaker Alfred Hitchcock was nicknamed the "Master of Suspense" for employing a kind of psychological suspense in his films, producing a distinct viewer experience.
+                                <br>
+                                <br><strong>Who Was Alfred Hitchcock?</strong>
+                                <br>Famous director and filmmaker Alfred Hitchcock worked for a short time in engineering before entering the film industry in 1920. He left for Hollywood in 1939, where his first American film, Rebecca, won the Academy Award for Best Picture. Hitchcock created more than 50 films, including the classics Rear Window, The 39 Steps and Psycho. Nicknamed the "Master of Suspense," Hitchcock received the AFI's Life Achievement Award in 1979. He died in 1980.
+                                <br>
+                                <br><strong>Early Life</strong>
+                                <br>Alfred Joseph Hitchcock was born in London, England, on August 13, 1899, and was raised by strict, Catholic parents. He described his childhood as lonely and sheltered, partly due to his obesity. He once said that he was sent by his father to the local police station with a note asking the officer to lock him away for 10 minutes as punishment for behaving badly. He also remarked that his mother would force him to stand at the foot of her bed for several hours as punishment (a scene alluded to in his film Psycho). This idea of being harshly treated or wrongfully accused would later be reflected in Hitchcock's films.
+                                <br>
+                                <br><strong>Master of Suspense</strong>
+                                <br>Hitchcock attended the Jesuit school St. Ignatius College before going on to attend the University of London, taking art courses. He eventually obtained a job as a draftsman and advertising designer for the cable company Henley's. It was while working at Henley's that he began to write, submitting short articles for the in-house publication. From his very first piece, he employed themes of false accusations, conflicted emotions and twist endings with impressive skill. In 1920, Hitchcock entered the film industry with a full-time position at the Famous Players-Lasky Company designing title cards for silent films. Within a few years, he was working as an assistant director.
+                                <br>
+                                In 1925, Hitchcock directed his first film and began making the "thrillers" for which he became known the world over. His 1929 film Blackmail is said to be the first British "talkie." In the 1930s, he directed such classic suspense films as The Man Who Knew Too Much (1934) and The 39 Steps (1935).
+                                <br>
+                                <br><strong>Movies: 'Rebecca,' 'Psycho' and 'The Birds'</strong>
+                                <br>In 1939, Hitchcock left England for Hollywood. The first film he made in the United States, Rebecca (1940), won an Academy Award for best picture. Some of his most famous films include Psycho (1960), The Birds (1963) and Marnie (1964). His works became renowned for their depictions of violence, although many of his plots merely function as decoys meant to serve as a tool for understanding complex psychological characters. His cameo appearances in his own films, as well as his interviews, film trailers and the television program Alfred Hitchcock Presents (1955-1965), made him a cultural icon.
+                                <br>
+                                <br><strong>Death and Legacy</strong>
+                                <br>Hitchcock directed more than 50 feature films in a career spanning six decades. He received the American Film Institute's Life Achievement Award in 1979. One year later, on April 29, 1980, Hitchcock died peacefully in his sleep in Bel Air, California. He was survived by his lifetime partner, assistant director and closest collaborator, Alma Reville, also known as "Lady Hitchcock," who died in 1982.
+                            </div>
+
+                            <div class="modal-footer">
+                            <a href="https://www.biography.com/filmmaker/alfred-hitchcock" target="_blank" class="btn btn-warning" role="button">More @ biography.com</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
+
                 
             <!-- featured film -->
-            <div class="col pr-0 feat-film">
+            <div class="col-12 col-md-6 p-1 feat-film">
                 <h3>Vertigo</h3>
                 <img src="./assets/images/vertigo-dangling-150x150.gif" class="float-left mr-3" alt="Still image from Hitchcock's film 'Vertigo'">
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aspernatur assumenda rem qui aut soluta quasi deserunt! Reprehenderit aut, rerum culpa iusto cum exercitationem quae possimus nihil. Laudantium, accusantium dolorum.</p>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium aspernatur assumenda rem qui aut soluta quasi deserunt! Reprehenderit aut, rerum culpa iusto cum exercitationem quae possimus nihil. Laudantium, accusantium dolorum.</p>
-                <a href="#" class="btn btn-secondary" role="button">Learn More</a>
-            </div>
-        </div>
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-warning text-dark rounded-0" data-toggle="modal" data-target="#aboutModal">
+                    Learn More
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="aboutModalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="aboutModalTitle">About: T.R. Devlin</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
 
-        <div class="row bg-dark py-2 mb-0">
-            <footer class="text-center mx-auto">
-                <span class="text-muted">Copyright 2019</span>
-            </footer>
-        </div>
+                            <div class="modal-body">
+                                Filmmaker Alfred Hitchcock was nicknamed the "Master of Suspense" for employing a kind of psychological suspense in his films, producing a distinct viewer experience.
+                                <br>
+                                <br><strong>Who Was Alfred Hitchcock?</strong>
+                                <br>Famous director and filmmaker Alfred Hitchcock worked for a short time in engineering before entering the film industry in 1920. He left for Hollywood in 1939, where his first American film, Rebecca, won the Academy Award for Best Picture. Hitchcock created more than 50 films, including the classics Rear Window, The 39 Steps and Psycho. Nicknamed the "Master of Suspense," Hitchcock received the AFI's Life Achievement Award in 1979. He died in 1980.
+                                <br>
+                                <br><strong>Early Life</strong>
+                                <br>Alfred Joseph Hitchcock was born in London, England, on August 13, 1899, and was raised by strict, Catholic parents. He described his childhood as lonely and sheltered, partly due to his obesity. He once said that he was sent by his father to the local police station with a note asking the officer to lock him away for 10 minutes as punishment for behaving badly. He also remarked that his mother would force him to stand at the foot of her bed for several hours as punishment (a scene alluded to in his film Psycho). This idea of being harshly treated or wrongfully accused would later be reflected in Hitchcock's films.
+                                <br>
+                                <br><strong>Master of Suspense</strong>
+                                <br>Hitchcock attended the Jesuit school St. Ignatius College before going on to attend the University of London, taking art courses. He eventually obtained a job as a draftsman and advertising designer for the cable company Henley's. It was while working at Henley's that he began to write, submitting short articles for the in-house publication. From his very first piece, he employed themes of false accusations, conflicted emotions and twist endings with impressive skill. In 1920, Hitchcock entered the film industry with a full-time position at the Famous Players-Lasky Company designing title cards for silent films. Within a few years, he was working as an assistant director.
+                                <br>
+                                In 1925, Hitchcock directed his first film and began making the "thrillers" for which he became known the world over. His 1929 film Blackmail is said to be the first British "talkie." In the 1930s, he directed such classic suspense films as The Man Who Knew Too Much (1934) and The 39 Steps (1935).
+                                <br>
+                                <br><strong>Movies: 'Rebecca,' 'Psycho' and 'The Birds'</strong>
+                                <br>In 1939, Hitchcock left England for Hollywood. The first film he made in the United States, Rebecca (1940), won an Academy Award for best picture. Some of his most famous films include Psycho (1960), The Birds (1963) and Marnie (1964). His works became renowned for their depictions of violence, although many of his plots merely function as decoys meant to serve as a tool for understanding complex psychological characters. His cameo appearances in his own films, as well as his interviews, film trailers and the television program Alfred Hitchcock Presents (1955-1965), made him a cultural icon.
+                                <br>
+                                <br><strong>Death and Legacy</strong>
+                                <br>Hitchcock directed more than 50 feature films in a career spanning six decades. He received the American Film Institute's Life Achievement Award in 1979. One year later, on April 29, 1980, Hitchcock died peacefully in his sleep in Bel Air, California. He was survived by his lifetime partner, assistant director and closest collaborator, Alma Reville, also known as "Lady Hitchcock," who died in 1982.
+                            </div>
+
+                            <div class="modal-footer">
+                            <a href="https://www.biography.com/filmmaker/alfred-hitchcock" target="_blank" class="btn btn-warning" role="button">More @ biography.com</a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>    
 
     </div>
-
+    
+    <div class="container-md">
+        <div class="row bg-dark py-2 mb-0">
+            <footer class="text-center mx-auto col">
+                <span class="text-muted footer">&copy; Copyright 2019-2020 | Github: <a href="https://github.com/gusvalenzuela/holiday-activity" target="_blank" class="text-decoration-none">@gusvalenzuela</a></span>
+            </footer>
+        </div>
+    </div>
 </body>
 </html>

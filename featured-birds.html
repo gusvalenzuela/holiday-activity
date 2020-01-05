@@ -9,32 +9,33 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>AH - The Birds (Film)</title>
+    <title>Featured: The Birds</title>
 </head>
 
 <body>    
-    <div class="container mb-4" id="page-top">
+    <div class="container-md mb-4" id="page-top">
         <div class="row">
             <nav class="navbar navbar-expand-sm bg-dark navbar-dark col">
-                <button class="navbar-toggler w-100" type="button" data-toggle="collapse" data-target="#ah-Navbar">
+                <span class="text-white">[.hitchcockFanSite]</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ah-Navbar">
                 <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="ah-Navbar">
-                    <ul class="navbar-nav text-center">
+                <div class="collapse navbar-collapse d-flex justify-content-end" id="ah-Navbar">
+                    <ul class="navbar-nav text-right">
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active text-warning" href="featured-vertigo.html">Masterpieces<span class="sr-only">(current)</span></a>
+                            <a class="nav-link disabled text-warning" href="#">Masterpieces<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="films-pg-1.html">Films</a>
                         </li>    
                         <li class="nav-item">
-                            <a class="nav-link" href="#">News</a>
+                            <a class="nav-link" href="news.html">News</a>
                         </li>    
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact Me</a>
+                            <a class="nav-link" href="contact.html">Contact Me</a>
                         </li>    
                     </ul>
                 </div>  
@@ -46,24 +47,23 @@
             <div id="jumbo-slides" class="carousel slide col-12 px-0" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                        <img src="./assets/images/vertigo-stairs-header.jpg" class="d-block w-100" data-interval="2000" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./assets/images/norman-bates-header.png" class="d-block w-100" data-interval="2000" alt="...">
+                        <img src="./assets/images/vertigo-stairs-header.jpg" class="d-block w-100" data-interval="1000" alt="Stairs shot from Vertigo">
                     </div>
                     <div class="carousel-item active">
-                        <img src="./assets/images/birds-cameo-header.jpg" class="d-block w-100" data-interval="3000" alt="...">
+                        <img src="./assets/images/norman-bates-header.png" class="d-block w-100" data-interval="1000" alt="Norman Bates seated, wrapped in blanket">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./assets/images/birds-cameo-header.jpg" class="d-block w-100" data-interval="1000" alt="Alfred Hitchcock walking out a pet shop">
                     </div>
                     <div class="car-text">
-                      <h1 class="pl-4 name-decor">FEATURED FILMS</h1>
-                      
+                      <h1 class="pl-4 name-decor">FEATURED FILMS</h1>                      
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container" id="content-top">
+    <div class="container-md mb-4" id="content-top">
 
         <!-- title header row -->
         <div class="row">
@@ -79,15 +79,15 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem incidunt consequatur alias, eveniet eligendi ratione nobis? Ea pariatur illo animi eaque tempore error veritatis tenetur ipsum voluptatibus! Porro, odit quia.</p>
                
                 <!-- blockquote for movie quote -->
-                <blockquote class="blockquote text-center align-middle float-right p-3">
-                    <p class="mb-0">You shouldn't keep souvenirs of a killing. <br>You shouldn't have been that sentimental.</p>
-                    <footer class="blockquote-footer">James Stewart, as "Scottie," in <cite title="Source Title">Vertigo</cite></footer>
+                <blockquote class="blockquote text-center align-middle float-right m-3">
+                    <p class="mb-0">I hardly think a few birds are <br>going to bring about the end of the world.</p>
+                    <footer class="blockquote-footer">Mrs. Bundy" in <cite title="Source Title">The Birds</cite></footer>
                 </blockquote>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo dolore architecto temporibus magnam ad debitis quaerat tenetur pariatur eius culpa, unde labore eveniet doloribus consequuntur beatae dicta molestiae doloremque assumenda.Magnam sunt odio nam soluta! Rem numquam ex illum. Reprehenderit molestias suscipit dolorum consequatur recusandae dolores odit? Officiis optio officia doloribus ab, illum, voluptatum laborum nostrum nulla neque facilis reprehenderit.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum totam consequuntur architecto exercitationem perferendis provident fuga minus incidunt repellendus nisi numquam sapiente, vel illo natus itaque distinctio quae laboriosam assumenda.</p>
                 
                 <!-- bottom 150x150 image of featured movie  -->
-                <img src="./assets/images/birds-running-sm.jpg" class="float-right" alt="Dangling">
+                <img src="./assets/images/birds-running-sm.jpg" class="float-right p-2" alt="Dangling">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum totam consequuntur architecto exercitationem perferendis provident fuga minus incidunt repellendus nisi numquam sapiente, vel illo natus itaque distinctio quae laboriosam assumenda.</p>
                 <p class="lead"><i>Did you know?</i></p>
                 <ul class="text-decoration-none">
                     <li><i>The Birds</i> is loosely based on the 1952 horror story of the same name by the British writer Daphne du Maurier.</li>
@@ -117,13 +117,15 @@
             </div>
         </div>
 
+        
+    </div>
+    
+    <div class="container-md">
         <div class="row bg-dark py-2 mb-0">
-            <footer class="text-center mx-auto">
-                <span class="text-muted">Copyright 2019</span>
+            <footer class="text-center mx-auto col">
+                <span class="text-muted footer">&copy; Copyright 2019-2020 | Github: <a href="https://github.com/gusvalenzuela/holiday-activity" target="_blank" class="text-decoration-none">@gusvalenzuela</a></span>
             </footer>
         </div>
-
     </div>
-
 </body>
 </html>

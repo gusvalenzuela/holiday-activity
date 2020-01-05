@@ -1,5 +1,10 @@
 body {
-    background: url(../images/white_carbonfiber_@2X.png);
+    background: url(../images/green_cup.png);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;
+}
+
+.nice-bottom-border {
+    border-bottom: 8px goldenrod solid;
 }
 
 .car-text {
@@ -16,11 +21,6 @@ body {
     text-shadow: 3px 3px black;
 }
 
-.home-tagline {
-    text-transform: uppercase;
-}
-
-
 .slide-height-1 {
     max-height: 340px;
 }
@@ -28,16 +28,10 @@ body {
     max-height: 210px;
 }
 
-#thirtynine-steps-card {
-    background: url(../images/39-steps-card-bg.jpg) center center;
-}
-#secret-agent-card {
-    background: url(../images/secret-agent-card-bg.jpg) center center;
-}
-#sabotage-card {
-    background: url(../images/sabotage-card-bg.jpg) center center;
-}
 
+.footer {
+    font-size: 14px;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -71,5 +65,10 @@ body {
     .feat-film {
         padding-top: .5em;
         padding-left: 0;
+    }
+
+    .feat-img{
+        height: 150px;
+        width: 150px;
     }
 } 
